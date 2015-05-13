@@ -8,7 +8,7 @@ except ImportError:
 
 from netaddr import AddrFormatError
 
-from .fields import EUI
+from .eui_patch import EUI
 
 
 class MACAddressField(Field):
