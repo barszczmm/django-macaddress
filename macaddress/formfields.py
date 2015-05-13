@@ -6,7 +6,9 @@ try:
 except ImportError:
     from django.forms.util import ValidationError
 
-from netaddr import EUI, AddrFormatError
+from netaddr import AddrFormatError
+
+from .fields import EUI
 
 
 class MACAddressField(Field):
